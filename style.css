@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "vogue";
+  src: url("url:./assets/fonts/Vogue") format("ttf")
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+	top: 0;
+  z-index: -1;
+}
+
+.title {
+  font-family: 'vogue';
+  color: white;
+  font-size: 15vh;
+  margin-bottom: 15vh;
+}
+
+.container {
+  background-color: rgba(146, 146, 146, 0.3);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+  z-index: 1;
+}
+
+button {
+  background-color: rgba(146,146,146, 0);
+  color: white;
+  opacity: 1;
+  font-family: 'vogue';
+  font-size: 3vh;
+  border: 1px solid white;
+  padding: 1vw 2vw 1vw 2vw;
+  cursor: pointer;
+  transition: .5s;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+/* 
+@keyframes slideout {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100vh;
+  }
+} */
